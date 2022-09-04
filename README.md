@@ -5,7 +5,7 @@ The simplest implementation of Golang channels, selects and wait groups
 </p>
 
 <p align="center">
-    <img src="assets\images\go-channel.png" />
+    <img src="/assets/images/go-channel.png" />
 </p>
 
 ## Installation
