@@ -1,0 +1,45 @@
+{
+  "name": "channels.ts",
+  "version": "1.0.0",
+  "description": "Simple and easy to use TypeScript implementation of Golang channels",
+  "main": "./dist/index.js",
+  "types": "lib",
+  "author": "Dimitar Ruskov",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc -p .",
+    "test": "mocha -r ts-node/register ./tests/**/*.test.ts",
+    "copy": "cp package.json dist/ && cp README.md dist/",
+    "dist": "npm run build && npm run copy && cd ./dist && npm publish",
+    "start": "ts-node ./src/index.ts"
+  },
+  "homepage": "https://github.com/ruskovweb/channels.ts#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ruskovweb/channels.ts.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ruskovweb/channels.ts/issues"
+  },
+  "keywords": [
+    "go",
+    "golang",
+    "chan",
+    "channel",
+    "channels",
+    "csp",
+    "communicating",
+    "sequential",
+    "processes",
+    "streams",
+    "concurrency"
+  ],
+  "devDependencies": {
+    "@types/chai": "^4.3.3",
+    "@types/mocha": "^9.1.1",
+    "@types/node": "^18.7.14",
+    "chai": "^4.3.6",
+    "mocha": "^10.0.0",
+    "ts-node": "^10.9.1"
+  }
+}
