@@ -77,7 +77,7 @@ Waiting for the channel to be closed...
 The channel has been closed.
 ```
 
-First we create a channel of numbers. By default the channel will have a buffer size of 1. Then we define two routines. They are simple IIFE functions that represents the go routines. They are executed immediately and we forget about them. That's why the `Waiting for the channel to be closed...` message appeared first. Now they can communicate with each other through our channel. The first routine writes to the channel and the second one reads from it. Finally with the `chan.untilClosed()` we are waiting for the channel to be closed, otherwise the program will exit immediately.
+First we create a channel of numbers. By default the channel will have a buffer size of 1. Then we define two routines. They are simple IIFE functions that represent the go routines. They are executed immediately and we forget about them. That's why the `Waiting for the channel to be closed...` message appeared first. Now they can communicate with each other through our channel. The first routine writes to the channel and the second one reads from it. Finally with the `chan.untilClosed()` we are waiting for the channel to be closed, otherwise the program will exit immediately.
 
 For more details see the [documentation](DOCUMENTATION.md).
 
