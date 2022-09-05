@@ -1,4 +1,4 @@
-export default class WaitGroup {
+export class WaitGroup {
     #count = 0;
     #resolve?: () => void;
     #resolver = new Promise<void>(resolve => { 

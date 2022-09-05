@@ -6,7 +6,7 @@ interface Case<T> {
     v: T
 }
 
-export default class Select {
+export class Select {
     resolved = new Channel<Case<any>>(Infinity);
     statuses: boolean[] = [];
     actions: Action<any>[] = [];

@@ -80,6 +80,8 @@ Channels are a typed conduit through which you can send and receive values.
 The select statement lets a routine wait on multiple communication operations.
 A select blocks until one of its cases can run, then it executes that case (action).
 
+:warning: **The select statement is stateful. You must use one instance per context. Do not initialize it in loops.**
+
 #### casePut<T>(ch: Channel<T>, value: T, action: Action<T>): Select
 - **description**: Puts the provided value to the channel and passes that value to the action.
 - **params**: 
